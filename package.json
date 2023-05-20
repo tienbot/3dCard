@@ -1,6 +1,7 @@
 {
 	"name": "optimizedhtml",
 	"version": "5.0.0",
+	"homepage": "https://tienbot.github.io/3dCard",
 	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
 	"main": "index.js",
 	"author": "WebDesign Master",
@@ -11,7 +12,9 @@
 	"license": "ISC",
 	"scripts": {
 		"start": "gulp",
-		"build": "gulp build"
+		"build": "gulp build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.21.8",
@@ -25,6 +28,7 @@
 		"browsersync-ssi": "^0.2.4",
 		"cssnano": "^6.0.1",
 		"del": "^7.0.0",
+		"gh-pages": "^5.0.0",
 		"gsap": "^3.11.5",
 		"gulp": "^4.0.2",
 		"gulp-changed": "^4.0.3",
